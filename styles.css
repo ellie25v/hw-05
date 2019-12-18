@@ -72,7 +72,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.slider{
+.slider-box{
     margin: 0 auto;
     position: relative;
     width: 100%;
@@ -95,34 +95,38 @@ body{
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
 } 
-
-.slider button {
+.btn{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.slide button {
     border: none;
     width: 104px;
     height: 104px;
     background-color: rgba(81, 158, 141, 0.6);
     display: inline-block;
     position: absolute;
-    color: blanchedalmond;
-    font-size: 100px;
-    top: 50%;
-    transform: translateY(-50%);
+    
+    
     padding: 0px;
-    line-height: 104px; 
     z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.slider span{
-    display: inline-block;
-    height: 104px;
        
-}
 .slider-ctrl-prev {
-    left: 245px;
+    left: 0;
+    background-image: url(./img/prev.png);
 }
 .slider-ctrl-next {
-    right: 245px;
+    right: 0;
+    background-image: url(./img/next.png);
+    
 }
-.slider button:hover {
+.slide button:hover {
     background-color: rgb(81, 158, 141);
 }
 
@@ -132,15 +136,16 @@ body{
 .slides-text{
     font-size: 0px;
     font-family: 'Roboto', sans-serif;
-    height: 100px;
+    height: auto;
     display: inline-block;
     position: absolute;
-    top: 300px;
-    left: 800px;
+    top: 42%;
+    left: 50%;
     color: #fff;
-    padding: 10px;
     transform: translate(-50%,-50%);
     text-transform: uppercase;
+    width: 800px;
+    
 }
 .slides-text p {
     font-size: 24px;
@@ -149,6 +154,7 @@ body{
 .slides-text h2 {
     font-size: 60px;
     font-weight: 900;
+    line-height: 60px;
 }
 .featured-products{
     background-color: #e9f0fd;
@@ -218,6 +224,7 @@ body{
     width: 50px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0);
+    
 }
 .overlay img{
     margin: auto;
@@ -279,16 +286,16 @@ body{
     vertical-align: top;
     font-size: 18px;
 }
-.link:hover .featured-product-title,
-.link:focus .featured-product-title {
+.featured-product-list-item:hover .featured-product-title,
+.featured-product-list-item:focus .featured-product-title {
     background-color: rgb(72,198,172);
 } 
-.link:hover .price,
-.link:focus .price {
-        background-color: #7fd9c7;
+.featured-product-list-item:hover .price,
+.featured-product-list-item:focus .price {
+    background-color: #7fd9c7;
 } 
-.link:hover .overlay-backdrop,
-.link:focus .overlay-backdrop {
+.featured-product-list-item:hover .overlay-backdrop,
+.featured-product-list-item:focus .overlay-backdrop {
     opacity: 1;
 }
 .overlay button:hover{

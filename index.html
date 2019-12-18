@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
 
 </head>
-<div class="container">
-    <header class="main-header">
+<header class="main-header">
+    <div class="container">
         <nav class="main-nav clearfix">
             <h1 class="main-logo">
                 <a href="#home">mart</a>
@@ -38,28 +38,30 @@
             </ul>
         </nav>
           
-    </header>
-</div>
+    </div>
+</header>
     <body>
             <main>
                 <section class="slide">
-                    <div class="slider">
-                        <button class="slider-ctrl-prev">
-                            <span>&#8249;</span>
-                        </button>
-                        <button class="slider-ctrl-next"><span>&#8250;</span></button>
- 
-                        <ul class="slides">
-                            <li class="slides-item">
-                                <img class="slides-img" src="./img/backgr.png" alt="a" width="1600" height="600">
-                            </li>
-                        </ul>
-                        
+                    <div class="slider-box">
+                        <div class="slider">
+                            <ul class="slides">
+                                <li class="slides-item">
+                                    <img class="slides-img" src="./img/backgr.png" alt="a" width="1600" height="600">
+                                </li>
+                            </ul>
+                            <div class="slides-text">
+                                <h2 class="slide-title">affordable paris tours</h2>
+                                <p class="slides-descrp">city tours / tour tickets / tour guides</p>
+                            </div>
+                        </div>
+
+                        <div class="btn container">
+                            <button class="slider-ctrl-prev"></button>
+                            <button class="slider-ctrl-next"></button>
+                        </div>
                     </div>
-                    <div class="slides-text">
-                        <h2 class="slide-title">affordable paris tours</h2>
-                        <p class="slides-descrp">city tours / tour tickets / tour guides</p>
-                    </div>
+                    
 
                 </section>
                 <section class="featured-products">
@@ -67,12 +69,11 @@
                     <h2 class="featured-products-title">new collection</h2>
                     <ul class="featured-product-list clearfix">
                         <li class="featured-product-list-item">
-                            <a class="link" href="#product">
-                                <div class="card">
-                                    <img src="img/01.png" alt="blue tshirt" width="256" height="282">
-                                    <p class="featured-product-title">blue tshirt</p>
-                                    <p class="price">$26</p>
-                                </div>
+                            <img src="img/01.png" alt="blue tshirt" width="256" height="282">
+                            <a class="link" href="#product">                                 
+                                <p class="featured-product-title">blue tshirt</p>
+                                <p class="price">$26</p>
+                                </a>
                                 <div class="overlay-backdrop">
                                     <div class="overlay">
                                         <button class="like"><img src="./img/like.png" alt="like"></button>
@@ -84,49 +85,52 @@
                             </a>
                         </li>
                         <li class="featured-product-list-item">
+                            <img src="img/02.png" alt="woman shirt" width="256" height="282">
                             <a class="link" href="#product">
-                                <img src="img/02.png" alt="woman shirt" width="256" height="282">
                                 <p class="featured-product-title">woman shirt</p>
                                 <p class="price">$31</p>
-                                <div class="overlay-backdrop">
-                                    <div class="overlay">
-                                        <button class="like"><img src="./img/like.png" alt="like"></button>
-                                        <button class="share"><img src="./img/share.png" alt="share"></button>
-                                        <button class="time"><img src="./img/time.png" alt="time"></button>
-                                        <button class="add-to-cart"><img src="./img/cart.png" alt="cart">add to cart</button>
-                                    </div>
+                            </a>
+                            <div class="overlay-backdrop">
+                                <div class="overlay">
+                                    <button class="like"><img src="./img/like.png" alt="like"></button>
+                                    <button class="share"><img src="./img/share.png" alt="share"></button>
+                                    <button class="time"><img src="./img/time.png" alt="time"></button>
+                                    <button class="add-to-cart"><img src="./img/cart.png" alt="cart">add to cart</button>
                                 </div>
-                                </a>
+                            </div>
+                                
                         </li>
                         <li class="featured-product-list-item">
+                            <img src="img/03.png" alt="yellow tshirt" width="256" height="282">
                             <a class="link" href="#product">
-                                <img src="img/03.png" alt="yellow tshirt" width="256" height="282">
                                 <p class="featured-product-title">yellow tshirt</p>
                                 <p class="price">$21</p>
-                                <div class="overlay-backdrop">
-                                    <div class="overlay">
-                                        <button class="like"><img src="./img/like.png" alt="like"></button>
-                                        <button class="share"><img src="./img/share.png" alt="share"></button>
-                                        <button class="time"><img src="./img/time.png" alt="time"></button>
-                                        <button class="add-to-cart"><img src="./img/cart.png" alt="cart">add to cart</button>
-                                    </div>
-                                </div>
                             </a>
+                            <div class="overlay-backdrop">
+                                <div class="overlay">
+                                    <button class="like"><img src="./img/like.png" alt="like"></button>
+                                    <button class="share"><img src="./img/share.png" alt="share"></button>
+                                    <button class="time"><img src="./img/time.png" alt="time"></button>
+                                    <button class="add-to-cart"><img src="./img/cart.png" alt="cart">add to cart</button>
+                                </div>
+                            </div>
+                            
                         </li>
                         <li class="featured-product-list-item">
-                            <a class="link" href="#product">
-                                <img src="img/04.png" alt="cool lingerie" width="256" height="282">
+                            <img src="img/04.png" alt="cool lingerie" width="256" height="282">
+                            <a class="link" href="#product">   
                                 <p class="featured-product-title">cool lingerie</p>
                                 <p class="price">$56</p>
-                                <div class="overlay-backdrop">
-                                    <div class="overlay">
-                                        <button class="like"><img src="./img/like.png" alt="like"></button>
-                                        <button class="share"><img src="./img/share.png" alt="share"></button>
-                                        <button class="time"><img src="./img/time.png" alt="time"></button>
-                                        <button class="add-to-cart"><img src="./img/cart.png" alt="cart"><span>add to cart</span></button>
-                                    </div>
-                                </div>
                             </a>
+                            <div class="overlay-backdrop">
+                                <div class="overlay">
+                                    <button class="like"><img src="./img/like.png" alt="like"></button>
+                                    <button class="share"><img src="./img/share.png" alt="share"></button>
+                                    <button class="time"><img src="./img/time.png" alt="time"></button>
+                                    <button class="add-to-cart"><img src="./img/cart.png" alt="cart"><span>add to cart</span></button>
+                                </div>
+                            </div>
+                            
                         </li> 
                     </ul>
                     </div>
