@@ -106,7 +106,7 @@ body{
     transform: translateY(-50%);
     padding: 0px;
     line-height: 104px; 
-    z-index: 10;
+    
     opacity: 0.4;
 }
 .slider span{
@@ -291,6 +291,7 @@ body{
 }
 .overlay button:hover{
     background-color: rgb(72, 198, 172);
+    border: 1px solid transparent;
 }
 .clearfix {
     overflow: auto;
