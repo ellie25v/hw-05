@@ -294,9 +294,9 @@ body{
 .featured-product-list-item:focus .featured-product-title {
     background-color: rgb(72,198,172);
 } 
-.featured-product-list-item:hover .price,
-.featured-product-list-item:focus .price {
-    background-color: #7fd9c7;
+.featured-product-list-item:hover .pr,
+.featured-product-list-item:focus .pr {
+    background-color: rgb(72,198,172);
 } 
 .featured-product-list-item:hover .overlay-backdrop,
 .featured-product-list-item:focus .overlay-backdrop {
