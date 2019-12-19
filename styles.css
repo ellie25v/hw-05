@@ -255,20 +255,23 @@ body{
 .featured-product-list li:nth-child(n+5){
     margin-bottom: 0px;
 }
+.pr {
+    width: 256px;
+    background: rgb(50, 50, 50);
+}
 .featured-product-title{
     background: rgb(50, 50, 50);
     color: white;
     float: left;
     font-size: 18px;
     width: 201px;
-    letter-spacing: -0,36px;
     line-height: 32px;
     text-indent: 12px;
     font-weight: 900;
 
 }
 .price{
-    background-color: rgb(140,140,140);
+    background-color: rgba(255, 255, 255, 0.603);
     color: white;
     text-align: center;
     float:right;
@@ -277,9 +280,9 @@ body{
     display: inline-block;
     width: 55px;
     font-weight: 900;
-    letter-spacing: -0,28px;
     line-height: 32px;
     text-indent: 12px;
+    
 }
 .featured-product-title, .featured-product-list-item .price{
     margin:0px;
