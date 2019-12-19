@@ -25,8 +25,8 @@ html {
     font-weight: 300;
 }
 .main-logo a::first-letter {
-      font-weight: 900;
-      color: #4ec6ab;
+    font-weight: 900;
+    color: #4ec6ab;
 }
 .main-header ul {
     float: right;
@@ -189,6 +189,7 @@ body{
     width: 255px;
     text-transform: uppercase;
     list-style: none;
+    position: relative;
 }
 .featured-product-list li{
     text-decoration: none;
@@ -196,7 +197,7 @@ body{
     width: 256px;
     margin-right: 14px;
     margin-bottom: 14px;
-    position: relative;
+    
 }
 .overlay-backdrop{
     box-sizing: border-box;
@@ -205,7 +206,7 @@ body{
     left: 0;
     opacity: 0;
     height: 282px;
-    width: 256px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     border: 14px solid rgba(255, 255, 255, 0.3);
     background-clip: padding-box;
@@ -225,13 +226,9 @@ body{
     width: 50px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
     
-}
-.overlay img{
-    margin: auto;
-    display: inline-block;
-    vertical-align: text-bottom;
-
 }
 .overlay .add-to-cart{
     width: 166px;
@@ -241,6 +238,8 @@ body{
     text-transform: uppercase;
     background-color: rgb(50, 50, 50);
     line-height: 50px;
+    background-position: 8px 8px;
+    padding-left: 20px;
 }
 .overlay button:not(:nth-child(n+3)){
     margin-right: 8px;
@@ -259,17 +258,6 @@ body{
     width: 256px;
     background: rgb(50, 50, 50);
 }
-.featured-product-title{
-    background: rgb(50, 50, 50);
-    color: white;
-    float: left;
-    font-size: 18px;
-    width: 201px;
-    line-height: 32px;
-    text-indent: 12px;
-    font-weight: 900;
-
-}
 .price{
     background-color: rgba(255, 255, 255, 0.603);
     color: white;
@@ -282,6 +270,16 @@ body{
     font-weight: 900;
     line-height: 32px;
     text-indent: 12px;
+}
+.pr .link{
+    color: white;
+    float: left;
+    font-size: 18px;
+    width: 201px;
+    line-height: 32px;
+    text-indent: 12px;
+    font-weight: 900;
+    text-decoration: none;
     
 }
 .featured-product-title, .featured-product-list-item .price{
@@ -301,6 +299,18 @@ body{
 .featured-product-list-item:hover .overlay-backdrop,
 .featured-product-list-item:focus .overlay-backdrop {
     opacity: 1;
+}
+.like{
+    background-image: url(./img/like.png);
+}
+.share{
+    background-image: url(./img/share.png);
+}
+.time{
+    background-image: url(./img/time.png);
+}
+.add-to-cart{
+    background-image: url(./img/cart.png);
 }
 .overlay button:hover{
     background-color: rgb(72, 198, 172);
