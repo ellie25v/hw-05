@@ -54,7 +54,7 @@ html {
     background-color: rgb(255, 255, 255);
     color: rgb(72, 198, 172);
   }
-.main-menu a.active {
+.main-menu a:active {
     background-color: rgb(255, 255, 255);
     color: rgb(72, 198, 172);
     background-color: rgb(72, 198, 172);
