@@ -200,8 +200,7 @@ body{
     position: relative;
 }
 .im {
-    width: 256px;
-    height: 282px;
+    position: relative;
 }
 .overlay-backdrop{
     box-sizing: border-box;
@@ -217,10 +216,9 @@ body{
     
 }
 .overlay {
-    top: 141px;
-    left: 30px;
-    transform: translateX(-50%);
-    transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
     width: 166px;
 
@@ -279,7 +277,6 @@ body{
     color: white;
     float: left;
     font-size: 18px;
-    width: 201px;
     line-height: 32px;
     text-indent: 12px;
     font-weight: 900;
