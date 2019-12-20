@@ -200,7 +200,6 @@ body{
     position: relative;
 }
 .im {
-    position: absolute;
     width: 256px;
     height: 282px;
 }
